@@ -1,0 +1,14 @@
+#함수내 함수
+
+def outer(a,b):
+
+    def plus (c,d):
+        return c + d 
+
+    r1 = plus(a,b)
+    r2 = plus(b,a)
+    print(r1 + r2)
+
+outer(1,2 )
+###plus 함수는 함수내 함수에만 쓰이게됨
+###
